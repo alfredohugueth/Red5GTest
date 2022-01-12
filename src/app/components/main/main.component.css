@@ -1,0 +1,31 @@
+
+.title {
+    position: absolute;
+    top: 155px;
+    left: 183px;
+    width: 527px;
+    height: 34px;
+    text-align: left;
+    font: normal normal bold 28px/34px Proxima Nova;
+    letter-spacing: 0px;
+    color: #003662;
+    opacity: 1;
+}
+
+.description {
+    position: absolute;
+    top: 229px;
+    left: 183px;
+    width: 914px;
+    height: 218px;
+    text-align: left;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.re-direct-link {
+    color: #E5137E;
+    text-decoration: none;
+}
+
+

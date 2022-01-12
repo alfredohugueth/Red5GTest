@@ -1,0 +1,50 @@
+<div class="card-container">
+    <div class="card"> <!-- TODO: ngFor, para cada carta mostrada-->
+        <figure>
+            <img src="../../../assets/img/user-alone.png" class="img-card"> <!-- TODO: Colocar src de imagen-->
+            <figcaption class="caption">
+                Seleccione esta opción si usted es 
+                <br>
+                persona natural.
+            </figcaption>
+        </figure>
+        <button class="button_start" (click)="clickPersonaNatural(aviso_terminos_condiciones)"> <!-- Implementar metodo click-->
+            Iniciar
+        </button>
+    </div>
+    <div class="card" style="left: 640px !important;"> <!-- TODO: ngFor, para cada carta mostrada-->
+        <figure>
+            <img src="../../../assets/img/group-img.jpg" class="img-card"> <!-- TODO: Colocar src de imagen-->
+            <figcaption class="caption">
+                Seleccione esta opción si usted es 
+                <br>
+                persona jurídica.
+            </figcaption>
+        </figure>
+        <button class="button_start" (click)="clickPersonaJuridica()"> <!-- Implementar metodo click-->
+            Iniciar
+        </button>
+    </div>
+</div>
+
+<div class="checkbox-message">
+    <input type="checkbox" id="checking_message" [(ngModel)]="check_box">
+    <label for="checking_message">
+        Autorizo el <a href="/">tratamiento de mis datos personales</a> y autorizo <a href="/">términos y condiciones</a> de la página web.
+    </label>
+</div>
+
+<ng-template #aviso_terminos_condiciones style="position: relative;">
+    
+        <mat-dialog-content>
+            <p>
+                Pruebas varias
+            </p>
+        </mat-dialog-content>
+        <mat-dialog-actions>
+            <p>
+                Mas pruebas varias
+            </p>
+        </mat-dialog-actions>
+    
+</ng-template>
